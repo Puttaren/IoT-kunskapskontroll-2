@@ -10,7 +10,7 @@ username = "hivemq.webclient.1776763220143"
 password = "6l57hxH<M2?zKVfQw:&G"
 topic = "room1/environment"
 
-BASE_DIR = "C:\YA BI analyst\Kurser\BI25M AI & IoT\Kunskapskontroll 2"
+BASE_DIR = "C:\YA BI analyst\Kurser\BI25M AI & IoT\Kunskapskontroll 2\IoT-kunskapskontroll-2"
 CSV_FILE = os.path.join(BASE_DIR, "sensor_data.csv")
 
 # Skapa mappen om den inte finns
