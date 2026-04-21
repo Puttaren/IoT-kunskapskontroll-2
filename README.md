@@ -3,7 +3,7 @@
 Detta projekt är en del av kursen **AI och IoT** och syftar till att modellera ett komplett IoT-flöde från lokal datainsamling via sensorer till molnbaserad kommunikation, lagring och prediktiv analys med Machine Learning.
 
 ## 📋 Projektöversikt
-Målet med projektet är att skapa ett intelligent system för rumsoptimering. Genom att mäta temperatur och luftfuktighet tränas en AI-modell för att förutsäga när en fläkt eller klimatanläggning behöver startas (förkonditionering) för att hålla rummet inom optimala gränser.
+Målet med projektet är att skapa ett intelligent system för rumsoptimering. Baserat på temperaturmätningar (augmenterade data) tränas en AI-modell för att förutsäga när en fläkt eller klimatanläggning behöver startas (förkonditionering) för att hålla rummet inom optimala gränser.
 
 **Målvärden för rumsklimat:**
 * **Temperatur:** $20^{\circ}C$ till $23^{\circ}C$
@@ -17,7 +17,7 @@ Systemet följer ett strukturerat IoT-flöde:
 2. **Programmering:** MicroPython.
 3. **Kommunikation:** MQTT-protokollet via **HiveMQ Cloud** (Broker).
 4. **Lagring:** Python-script (Subscriber) som lagrar data i en **CSV-fil**.
-5. **Analys:** AI-modellering utförd i VSCode.
+5. **Analys:** AI-modellering.
 
 ### Komponentlista
 * 1x Raspberry Pi Pico W
@@ -31,7 +31,7 @@ Systemet följer ett strukturerat IoT-flöde:
 ## 🚀 Implementering
 
 ### 1. Datainsamling (Edge)
-Inledningsvis genomfördes funktionstester för att säkerställa hårdvarans funktionalitet, inklusive "Hello World" (blinkande LED) och styrning av RGB-modulen. 
+Inledningsvis genomfördes funktionstester för att säkerställa hårdvarans funktionalitet, inklusive "Hello World" (blinkande LED) och styrning av RGB-modulen på lite olika roliga sätt. 
 
 För huvuduppgiften samlas data in med en **granularitet på varannan sekund**, med datum och tid, temperatur och luftfuktighet samt en klassificering (temp_status).  
 
@@ -44,8 +44,7 @@ Den insamlade datan kategoriseras enligt följande regler:
 * $20 \le T \le 23$ $\rightarrow$ Mode: `off`
 
 **Luftfuktighetskontroll:**
-* $H > 60$ $\rightarrow$ Drymode: `on`
-* $H \le 60$ $\rightarrow$ Drymode: `off`
+*Detta skippade vi för enkelhets skull*
 
 ### 3. AI-analys & Prediktion
 För att förutse behovet av förkonditionering används en **RandomForest-modell**.
@@ -61,11 +60,11 @@ Resultatet presenteras i en BI-lösning/Dashboard med:
 
 ---
 
-## 📂 Filstruktur i Repository
-* XXXX Koden för uppgiften.
-* XXXXX Insamlad data i CSV-format.
-* XXXXX Augmenterade data i CSV-format.
-* XXXX Tränad RandomForest-modell och AI-script.
+## 📂 I Repository
+* Koden för uppgiften.
+* Insamlad data i CSV-format.
+* Augmenterade data i CSV-format.
+* Tränad RandomForest-modell och AI-script.
 * `README.md` - Denna projektrapport.
 
 **IoT-eliten:** Elin Molvig, My Tistelberg, Linus Staffas och Michael Broström
