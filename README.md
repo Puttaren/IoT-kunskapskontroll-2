@@ -1,6 +1,6 @@
 # AI IoT Kunskapskontroll 2: Intelligent Klimatkontroll 🌡️
 
-Detta projekt är en del av kursen **AI IoT** och syftar till att modellera ett komplett IoT-flöde från lokal datainsamling via sensorer till molnbaserad kommunikation, lagring och prediktiv analys med Machine Learning.
+Detta projekt är en del av kursen **AI och IoT** och syftar till att modellera ett komplett IoT-flöde från lokal datainsamling via sensorer till molnbaserad kommunikation, lagring och prediktiv analys med Machine Learning.
 
 ## 📋 Projektöversikt
 Målet med projektet är att skapa ett intelligent system för rumsoptimering. Genom att mäta temperatur och luftfuktighet tränas en AI-modell för att förutsäga när en fläkt eller klimatanläggning behöver startas (förkonditionering) för att hålla rummet inom optimala gränser.
@@ -62,9 +62,10 @@ Resultatet presenteras i en BI-lösning/Dashboard med:
 ---
 
 ## 📂 Filstruktur i Repository
-* `/src` - Koden för uppgiften.
-* `/data` - Insamlad data i CSV-format[cite: 6].
-* `/model` - Tränad RandomForest-modell och AI-script.
+* XXXX Koden för uppgiften.
+* XXXXX Insamlad data i CSV-format.
+* XXXXX Augmenterade data i CSV-format.
+* XXXX Tränad RandomForest-modell och AI-script.
 * `README.md` - Denna projektrapport.
 
 **IoT-eliten:** Elin Molvig, My Tistelberg, Linus Staffas och Michael Broström
