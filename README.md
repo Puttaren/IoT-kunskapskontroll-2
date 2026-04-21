@@ -61,7 +61,7 @@ Trots detta får man anse att uppgiften är löst eftersom vi gått igenom alla 
 ![Scatterplot](Scatterplot.png)
 ![Stapeldiagram](Stapeldiagram.png)
 
-
+ 
 ---
 
 ## 📂 I Repository
