@@ -59,9 +59,9 @@ Eftersom "problemet" var för enkelt så blev det ingen värst imponerande model
 Trots detta får man anse att uppgiften är löst eftersom vi gått igenom alla steg och samlat in IoT-data, skickat dem via broker och subscriber, sparat i CSV-fil, tränat modell och predikterat data. 
 
 ![Scatterplot](Scatterplot.png)
-![Heatmap](Stapeldiagram.png)
+![Stapeldiagram](Stapeldiagram2.png)
 
-
+ 
 ---
 
 ## 📂 I Repository
